@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Tetris</title>
+    <link rel="stylesheet" href="./css/base.css"/>
+    <!-- <script type="text/javascript" src="./js/base.js"></script> -->
+    <script type="text/javascript" src="./js/tetris.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+</head>
+<body>
+<div class="tetris" id="tetris">
+    <div class="top">
+        <canvas width="202" height="339" id="canvas"></canvas>
+        <div class="left">
+            <div class="_1deS">
+                <p>最高分</p>
+                <div class="iHKP fen">0</div>
+                <p>消除行</p>
+                <div class="iHKP line">0</div>
+                <p>级别</p>
+                <div class="iHKP jibie">1</div>
+                <p>下一个</p>
+                <div class="_3Wmt">
+                    <canvas width="70" height="70" id="shitu" style="margin: 0"></canvas>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="J9SA" >
+        <div class="_1pg0 _23pZ _2TvZ xuanzhuan" style="top: 0px; left: 374px;"><i class=""></i><em
+                style="transform: translate(0px, 63px) scale(1, 2);"></em><span class="_1zCL">旋转</span></div>
+        <div class="_1pg0 _23pZ _2TvZ downmove" style="top: 180px; left: 374px;"><i class=""></i><em
+                style="transform: translate(0px, -71px) rotate(180deg) scale(1, 2);"></em><span class="">下移</span></div>
+        <div class="_1pg0 _23pZ _2TvZ leftMove" style="top: 90px; left: 284px;"><i class=""></i><em
+                style="transform: translate(60px, -12px) rotate(270deg) scale(1, 2);"></em><span class="">左移</span>
+        </div>
+        <div class="_1pg0 _23pZ _2TvZ rigthMove" style="top: 90px; left: 464px;"><i class=""></i><em
+                style="transform: translate(-60px, -12px) rotate(90deg) scale(1, 2);"></em><span class="">右移</span>
+        </div>
+       <!-- <div class="_1pg0 _23pZ p4fG" style="top: 100px; left: 52px;"><i class=""></i><span class="">掉落 (SPACE)</span>
+        </div>-->
+        <div class="_1pg0 _3kg_ oW6K restartBtn" style="top: 0px; left: 196px;"><i class=""></i><span class="">重玩(R)</span></div>
+
+        <div class="_1pg0 RBZg oW6K pauseBtn" style="top: 0px; left: 106px;"><i class=""></i><span class="">暂停(P)</span></div>
+    </div>
+</div>
+</body>
+</html>
