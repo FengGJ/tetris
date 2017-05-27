@@ -221,11 +221,11 @@ window.onload = function () {
   //计算得分
   var scoreTime;
   function score(){
-    var score=getCookie('score')
-    if(score<=fengshu){
+    var score=getCookie('score');
+    if(parseInt(score)<=fengshu){
       setCookie('score',fengshu*100,365);
-      $(".maxScore .score").html(getCookie('score'));
     }
+    $(".maxScore .score").html(getCookie('score'));
     scoreTime=setInterval(function () {
       if($(".maxScore").css("display")=="none"){
         $(".maxScore").show();
@@ -349,6 +349,7 @@ window.onload = function () {
     remain = {};
     pianyi = 3;
     xia = 0;
+    console.log(getCookie('score'))
     score();
     fengshu = 0;
     jibie = 1;
