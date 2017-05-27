@@ -11,21 +11,29 @@
 <body>
 <div class="tetris" id="tetris">
     <div class="top">
-        <canvas width="202" height="339" id="canvas"></canvas>
+        <div style="width: 202px;height: 339px;position: absolute;margin: 0 0 0 30px;">
+            <canvas width="202" height="339" id="canvas"></canvas>
+            <div class="startInterface">
+                <div></div>
+                <span>俄罗斯方块</span>
+            </div>
+        </div>
         <div class="left">
             <div class="_1deS">
-                <p>最高分</p>
+                <p>得分</p>
                 <div class="iHKP fen">0</div>
+                <div class="maxScore">
+                    <p>最高分</p>
+                    <div class="iHKP score" >0</div>
+                </div>
                 <p>消除行</p>
                 <div class="iHKP line">0</div>
                 <p>级别</p>
                 <div class="iHKP jibie">1</div>
                 <p>下一个</p>
                 <div class="_3Wmt">
-                    <canvas width="70" height="70" id="shitu" style="margin: 0"></canvas>
-
+                    <canvas width="82" height="44" id="shitu" style="margin: 0"></canvas>
                 </div>
-
             </div>
         </div>
     </div>
@@ -40,12 +48,14 @@
         <div class="_1pg0 _23pZ _2TvZ rigthMove" style="top: 90px; left: 464px;"><i class=""></i><em
                 style="transform: translate(-60px, -12px) rotate(90deg) scale(1, 2);"></em><span class="">右移</span>
         </div>
-       <!-- <div class="_1pg0 _23pZ p4fG" style="top: 100px; left: 52px;"><i class=""></i><span class="">掉落 (SPACE)</span>
-        </div>-->
+        <div class="_1pg0 _23pZ p4fG start" style="top: 100px; left: 52px;"><i class=""></i><span class="">开始 (SPACE)</span>
+        </div>
         <div class="_1pg0 _3kg_ oW6K restartBtn" style="top: 0px; left: 196px;"><i class=""></i><span class="">重玩(R)</span></div>
 
         <div class="_1pg0 RBZg oW6K pauseBtn" style="top: 0px; left: 106px;"><i class=""></i><span class="">暂停(P)</span></div>
     </div>
 </div>
+
+
 </body>
 </html>

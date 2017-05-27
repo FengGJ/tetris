@@ -19,7 +19,7 @@ ol, ul {
 }
 
 body {
-    /*background: url('../images/bg.png') no-repeat center center;*/
+    background: url('../images/bg.png') no-repeat center center;
     background-size: cover;
 }
 * {
@@ -40,7 +40,6 @@ body {
 
 canvas {
     display: block;
-    margin:0 0 0 30px;;
     border: 1px solid #c2d9f1;
     float: left;
 }
@@ -48,12 +47,13 @@ canvas {
     overflow: hidden;
 }
 .left{
-    float: left;
+    float: right;
     width: 100px;
-    margin-left: 20px;
+    margin-right: 30px;
 }
 ._1deS{
     color: #fff;
+    position: relative;
 }
 ._1deS p {
     line-height: 30px;
@@ -164,4 +164,41 @@ canvas {
 ._1pg0._3kg_ i {
     background: #dd1a1a;
     background: -moz-linear-gradient(top, #dc3333, #dc3333);
+}
+._1pg0.p4fG i {
+    width: 160px;
+    height: 160px;
+}
+.startInterface{
+    width: 77px;height: 120px;
+    position: absolute;z-index: 999;top:0;left: 0;right:0;bottom:0;margin: auto;
+
+}
+.startInterface>div{
+    width: 70px;height: 50px;border-radius:30px 30px 15px 15px;background: #fff;
+    animation: animate 1s infinite alternate;
+}
+.startInterface>div:before{content: "";display: block;height: 20px;width: 3px;border-radius: 50%;background: #000;position: absolute;top:8px;left: 25px}
+.startInterface>div:after{content: "";display: block;height: 20px;width: 3px;border-radius: 50%;background: #000;position: absolute;top:8px;right: 25px}
+@keyframes animate {
+    0%{transform: translateY(0)}
+    100%{transform: translateY(30px);height: 45px;width: 75px}
+}
+.startInterface>span{
+    position: absolute;top:0;left: -2px;right:0;bottom:0;margin: auto;
+    transform: translateY(50px);color: #fff;
+    width: 90px;height: 25px;
+    white-space: nowrap;
+}
+.maxScore{
+    display: none;
+    position: absolute;
+    top:0;
+    width: 100%;
+    background: #000;
+    /*animation: opacitys 258ms infinite alternate;*/
+}
+@keyframes opacitys {
+    0%{opacity: 0}
+    100%{opacity: 1}
 }
